@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/crossimg1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/crossimg2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="1"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/crossimg3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="2"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/crossimg6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="5"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/crossimg7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="6"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/cossimg8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="7"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/whitebackground" />
+
+
+        <ImageView
+            android:id="@+id/cossimg9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/whitebackground" />
+
+        <ImageView
+            android:id="@+id/crossimg4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="3"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/whitebackground" />
+        <!--            tools:layout_editor_absoluteX="176dp"-->
+        <!--            tools:layout_editor_absoluteY="61dp" />-->
+
+        <ImageView
+            android:id="@+id/crossimg5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="dropIn"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/whitebackground" />
+
+
+        <ImageView
+            android:id="@+id/boardimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="-100dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ticktacktoe" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Play"
+        app:layout_constraintEnd_toStartOf="@+id/Pause"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="52dp"
+        android:text="Pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+    <SeekBar
+        android:id="@+id/volumeseekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
